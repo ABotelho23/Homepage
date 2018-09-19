@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+@import 'package:angular_components/css/material/material';
+
+body {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  margin: 0;
+  min-width: 720px;
+  height: 100%
+}
+
+* {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+p {
+    margin: 35px;
+}
