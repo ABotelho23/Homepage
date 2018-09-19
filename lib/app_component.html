@@ -1,0 +1,62 @@
+<!--
+ Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file
+ for details. All rights reserved. Use of this source code is governed by a
+ BSD-style license that can be found in the LICENSE file.
+-->
+<material-drawer persistent #drawer="drawer"
+    [class.custom-width]="customWidth"
+    [attr.end]="end ? '' : null">
+  <material-list *deferredContent>
+    <div group class="mat-drawer-spacer"><img id="ABotelhoLogo" src="/logo6Border.jpg" alt="ABotelho Logo" height="50" width="50"></div>
+    <div group>
+      <div label>Profiles</div>
+      <material-list-item>
+        <material-icon icon="star"></material-icon><a href="https://www.linkedin.com/in/alex-botelho" style="color:gray">LinkedIn</a>
+      </material-list-item>
+      <material-list-item>
+        <material-icon icon="star"></material-icon><a href="https://github.com/ABotelho23" style="color:gray">GitHub</a>
+      </material-list-item>
+      <material-list-item>
+        <material-icon icon="star"></material-icon><a href="https://facebook.com/alex.botelho23" style="color:gray">Facebook</a>
+      </material-list-item>
+    </div>
+    <div group>
+      <div label>Apps</div>
+      <material-list-item>
+      <material-icon icon="video_library"></material-icon><a href="https://emby.abotelho.net" style="color:gray">Emby</a>
+      </material-list-item>
+      <material-list-item>
+      <material-icon icon="library_music"></material-icon><a href="https://music.abotelho.net" style="color:gray">Airsonic</a>
+    </material-list-item>
+    </div>
+  </material-list>
+</material-drawer>
+<div class="material-content">
+  <header class="material-header shadow">
+    <div class="material-header-row">
+      <material-button icon
+          class="material-drawer-button" (trigger)="drawer.toggle()">
+        <material-icon icon="menu"></material-icon>
+      </material-button>
+      <span class="material-header-title">Alex Botelho</span>
+      <div class="material-spacer"></div>
+      <nav class="material-navigation">
+        <a href="https://www.linkedin.com/in/alex-botelho" style="color:white">LinkedIn</a>
+      </nav>
+      <nav class="material-navigation">
+        <a href="https://github.com/ABotelho23" style="color:white">GitHub</a>
+      </nav>
+      <nav class="material-navigation">
+        <a href="https://facebook.com/alex.botelho23" style="color:white">Facebook</a>
+      </nav>
+    </div>
+  </header>
+  <div id="ContentText">
+    <p id="MainText">
+      Welcome to my homepage!
+    </p>
+    <p id="WorkInProgress">
+      This page is a work in progress! It will contain more information about me shortly!
+    </p>
+  </div>
+</div>
