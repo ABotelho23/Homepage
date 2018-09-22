@@ -40,5 +40,5 @@ class AppComponent {
   bool customWidth = false;
   bool end = false;
   bool overlay = false;
-  bool visible = false;
+  bool drawerVisible = false;
 }

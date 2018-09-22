@@ -24,7 +24,7 @@
       </nav>
     </div>
   </header>
-  <material-drawer persistent #drawer="drawer"
+  <material-drawer persistent #drawer="drawer" [(visible)]="drawerVisible"
       [class.custom-width]="customWidth"
       [attr.end]="end ? '' : null">
     <material-list *deferredContent>
