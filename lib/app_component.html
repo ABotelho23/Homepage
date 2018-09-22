@@ -3,34 +3,6 @@
  for details. All rights reserved. Use of this source code is governed by a
  BSD-style license that can be found in the LICENSE file.
 -->
-<material-drawer persistent #drawer="drawer"
-    [class.custom-width]="customWidth"
-    [attr.end]="end ? '' : null">
-  <material-list *deferredContent>
-    <div group class="mat-drawer-spacer"><img id="ABotelhoLogo" src="/logo6Border.jpg" alt="ABotelho Logo" height="50" width="50"></div>
-    <div group>
-      <div label>Profiles</div>
-      <material-list-item>
-        <material-icon icon="star"></material-icon><a href="https://www.linkedin.com/in/alex-botelho" style="color:gray">LinkedIn</a>
-      </material-list-item>
-      <material-list-item>
-        <material-icon icon="star"></material-icon><a href="https://github.com/ABotelho23" style="color:gray">GitHub</a>
-      </material-list-item>
-      <material-list-item>
-        <material-icon icon="star"></material-icon><a href="https://facebook.com/alex.botelho23" style="color:gray">Facebook</a>
-      </material-list-item>
-    </div>
-    <div group>
-      <div label>Apps</div>
-      <material-list-item>
-      <material-icon icon="video_library"></material-icon><a href="https://emby.abotelho.net" style="color:gray">Emby</a>
-      </material-list-item>
-      <material-list-item>
-      <material-icon icon="library_music"></material-icon><a href="https://music.abotelho.net" style="color:gray">Airsonic</a>
-    </material-list-item>
-    </div>
-  </material-list>
-</material-drawer>
 <div class="material-content">
   <header class="material-header shadow">
     <div class="material-header-row">
@@ -38,6 +10,7 @@
           class="material-drawer-button" (trigger)="drawer.toggle()">
         <material-icon icon="menu"></material-icon>
       </material-button>
+      <img id="ABotelhoLogo" src="/logo6Border.jpg" alt="ABotelho Logo" height="50" width="50">
       <span class="material-header-title">Alex Botelho</span>
       <div class="material-spacer"></div>
       <nav class="material-navigation">
@@ -51,10 +24,50 @@
       </nav>
     </div>
   </header>
+  <material-drawer persistent #drawer="drawer"
+      [class.custom-width]="customWidth"
+      [attr.end]="end ? '' : null">
+    <material-list *deferredContent>
+      <div group>
+        <div label>Profiles</div>
+        <material-list-item>
+          <material-icon icon="star"></material-icon><a href="https://www.linkedin.com/in/alex-botelho" style="color:gray">LinkedIn</a>
+        </material-list-item>
+        <material-list-item>
+          <material-icon icon="star"></material-icon><a href="https://github.com/ABotelho23" style="color:gray">GitHub</a>
+        </material-list-item>
+        <material-list-item>
+          <material-icon icon="star"></material-icon><a href="https://facebook.com/alex.botelho23" style="color:gray">Facebook</a>
+        </material-list-item>
+      </div>
+      <div group>
+        <div label>Apps</div>
+        <material-list-item>
+        <material-icon icon="video_library"></material-icon><a href="https://emby.abotelho.net" style="color:gray">Emby</a>
+        </material-list-item>
+        <material-list-item>
+        <material-icon icon="library_music"></material-icon><a href="https://music.abotelho.net" style="color:gray">Airsonic</a>
+      </material-list-item>
+      </div>
+    </material-list>
+  </material-drawer>
   <div id="ContentText">
     <p id="MainText">
       Welcome to my homepage!
     </p>
+      <form method="get" action="http://www.google.com/search">
+      <div style="border:1px solid black;padding:4px;width:20em;">
+      <table border="0" align="center" cellpadding="0">
+      <tr><td>
+      <input type="text"   name="q" size="25"
+      maxlength="255" value="" />
+      <input type="submit" value="Google Search" /></td></tr>
+      <tr><td align="center" style="font-size:75%">
+      <input type="radio"  name="sitesearch" value="" checked />The Web
+      <input type="radio"  name="sitesearch" value="yoursite.com"/> Only Your Site<br />
+      </td></tr></table>
+      </div>
+      </form>
     <p id="WorkInProgress">
       This page is a work in progress! It will contain more information about me shortly!
     </p>
