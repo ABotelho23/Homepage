@@ -10,7 +10,7 @@
           class="material-drawer-button" (trigger)="drawer.toggle()">
         <material-icon icon="menu"></material-icon>
       </material-button>
-      <span class="material-header-title"><img id="ABotelhoLogo" src="/logo6Name.png" alt="ABotelho Logo" height="50" width="50"></span>
+      <span class="material-header-title"><img id="ABotelhoLogo" src="/logo6Name.png" alt="ABotelho Logo" height="50"></span>
       <div class="material-spacer"></div>
       <nav class="material-navigation">
         <a href="https://www.linkedin.com/in/alex-botelho" style="color:white">LinkedIn</a>
@@ -55,8 +55,9 @@
       Welcome to my homepage!
     </p>
     <form method="get" action="http://google.com/search">
-      <input type="text" name="q" required autofocus>
+      <input type="text" name="q" required autofocus><br />
       <input type="submit" value="Google search">
+      <material-button raised class="red">Test button</material-button>
     </form>
     <p id="WorkInProgress">
       This page is a work in progress! It will contain more information about me shortly!

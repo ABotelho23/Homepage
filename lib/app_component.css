@@ -22,9 +22,17 @@
   background-color: #B71C1C;
 }
 
+#ContentText {
+    text-align: center
+}
+
+#MainText {
+}
+
 #WorkInProgress {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
 }
 
 #ABotelhoLogo {
