@@ -50,17 +50,29 @@
       </div>
     </material-list>
   </material-drawer>
-  <div id="ContentText">
-    <p id="MainText">
-      Welcome to my homepage!
-    </p>
+  <div id="MainText">
+    <div class="mdc-card" id="MainCard">
+      <h1>
+        Welcome to my homepage!
+      </h1>
+    </div>
     <form method="get" action="http://google.com/search">
-      <input type="text" name="q" required autofocus><br />
-      <input type="submit" value="Google search">
+      <input type="text" name="q" required autofocus><br/>
+      <input type="submit" value="Google search"><br/>
+
+      <div class="mdc-card" id="inputBox">
+        <material-input label="Search..."
+                        leadingGlyph="link"
+                        type="search">
+        </material-input>
+      </div>
+
       <material-button raised class="red">Test button</material-button>
     </form>
-    <p id="WorkInProgress">
-      This page is a work in progress! It will contain more information about me shortly!
-    </p>
+    <div class="mdc-card" id="WorkInProgress">
+      <p>
+        This page is a work in progress! It will contain more information about me shortly!
+      </p>
+    </div>
   </div>
 </div>

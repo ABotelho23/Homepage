@@ -1,5 +1,7 @@
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_button/mixins';
+@import 'package:angular_components/css/material/shadow';
+@import 'package:angular_components/material_input/mixins';
 
 @mixin colorize($selector, $color) {
   $raised: $selector + '[raised]';
@@ -9,6 +11,8 @@
   $not-raised: $selector + ':not([raised])';
   @include button-color($not-raised, $color);
 }
+
+@mixin mdc-card-shape-radius($radius, $rtl-reflexive){}
 
 :host {
 
@@ -27,8 +31,8 @@
 
   display: flex;
   flex: 1;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   overflow: hidden;
   position: relative;
@@ -40,25 +44,33 @@
   height: 100vh;
   min-width: 650px;
   min-height: 400px;
-  color:white;
+  color: black;
   background-color:#3C3C3C;
+  background-image: url("/background_main.jpg");
+  background-size: cover;
+  //filter: blur(20px);
 }
 
 .material-header {
   background-color: #B71C1C;
 }
 
-#ContentText {
-    text-align: center
-}
-
 #MainText {
+  text-align: center;
 }
 
 #WorkInProgress {
-  position: relative;
-  text-align: center;
-  vertical-align: bottom;
+  margin: auto;
+  height: 50%;
+  width: 30%;
+  min-width: 300px;
+}
+
+#MainCard {
+  margin: auto;
+  height: 50%;
+  width: 30%;
+  min-width: 300px;
 }
 
 #ABotelhoLogo {
@@ -68,4 +80,34 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
+}
+
+mdc-card {
+  @include mdc-card-shape-radius (1000,false);
+}
+
+#inputBox {
+margin: auto;
+height: 50%;
+width: 30%;
+min-width: 300px;
+}
+
+material-input {
+  &.red {
+    @include input-label-color($mat-red);
+  }
+
+  &.blue {
+    @include input-label-color($mat-blue);
+  }
+  margin: auto;
+}
+
+.grey-glyph {
+  @include input-leading-glyph-color($mat-grey-400);
+}
+
+.disabled-black {
+  @include material-input-disabled-input-color($mat-black);
 }

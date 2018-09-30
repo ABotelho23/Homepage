@@ -15,6 +15,7 @@ import 'package:angular_components/material_toggle/material_toggle.dart';
   selector: 'my-app',
   styleUrls: const [
       'package:angular_components/app_layout/layout.scss.css',
+      'package:angular_components/css/mdc_web/card/mdc-card.scss.css',
       'app_component.css'],
   templateUrl: 'app_component.html',
   directives: [
@@ -33,6 +34,7 @@ import 'package:angular_components/material_toggle/material_toggle.dart';
     MaterialListComponent,
     MaterialListItemComponent,
     MaterialTemporaryDrawerComponent,
+    MaterialButtonComponent,
   ],
 )
 
@@ -41,4 +43,5 @@ class AppComponent {
   bool end = false;
   bool overlay = false;
   bool drawerVisible = false;
+
 }
